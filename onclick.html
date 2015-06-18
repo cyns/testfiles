@@ -1,8 +1,17 @@
 <html>
 	<head>
-
+		<script>
+			document.onload = loader;
+			function loader(){
+				document.getElementById("starter").focus();
+			}
+		</script>
 	</head>
 <body>
+
+<form>
+	<input type=text id=starter></input>
+</form>
 
 <h2 tabindex="0" onclick="alert('clicked');">clickable heading</h2>
 
