@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script>
+			function DoExpand(){
+				var foo = document.getElementById("content-collapsible-block-0");
+				foo.setAttribute("aria-expanded", "true");
+				foo.style.display = "block";
+				
+			}
+		</script>	
+		<style>
+		.collapsible-block{display:none;}
+		</style>
+	</head>
+<body>
+
+<h2 tabindex="0" onclick="DoExpand()" class="section-heading collapsible-heading open-block" aria-haspopup="true" aria-controls="content-collapsible-block-0"><div title="" class="mw-ui-icon mw-ui-icon-arrow-up mw-ui-icon-element indicator"></div><span class="mw-headline" id="History">History</span><a title="Edit section: History" class="mw-ui-icon mw-ui-icon-element mw-ui-icon-edit-enabled edit-page icon-32px" href="#/editor/1" data-section="1">Edit</a></h2>
+<div class="collapsible-block" id="content-collapsible-block-0" aria-expanded="true" aria-pressed="true">
+	blah blah
+</div>
+
+</body>
+</html>
