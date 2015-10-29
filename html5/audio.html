@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Audio</title>
+</head>
+<body>
+        <h1>audio, track, code, role=application</h1>
+
+       <p>Example of the <code>&lt;audio&gt;</code> element with ogg file and role=application, tabindex=0, title=audio. This is the code from the original file</p>
+       
+        <audio controls autobuffer tabindex="0" role="application" title="audio">
+		 <source src="assets/audio/1.mp3">
+          <source src="assets/audio/kahvi285d_jim_black-yoctosecond.ogg">
+          <!-- Find the audio file here: http://www.kahvi.org/releases.php?release_number=285 -->
+          Your browser does not support OGG audio. Try using Safari, Chrome or Firefox.
+        </audio>
+
+       <p>Example of the <code>&lt;audio&gt;</code> element with mp3 file and no role. This relies on browser defaults and uses a format Edge supports</p> 
+         <audio controls autobuffer>
+		 <source src="music.mp3">
+         </audio>
+              
+       <p>Example of the <code>&lt;audio&gt;</code> element with mp3 file and track. Same as above with added track.</p>
+       <p>to do: add track</p>
+       <audio controls autobuffer>
+		 <source src="music.mp3">
+       </audio>
+       
+<p>simplied test case taken from <a href="http://html5accessibilty.com/html5elements.html">html5accessibility.com/html5elements</a>, which  is a modified version of the document prepared by <a href="http://www.ackernaut.com/" title="the Ackernaut">the Ackernaut</a> for the benefit of the web development community. <br>
+      If you have suggestions on how to improve this page let him know: terry / at / ackernaut / dot / com<br> 
+</body>
+</html>

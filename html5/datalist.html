@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>form</title>
+</head>
+<body>
+        <h1>datalist bug</h1>
+        <p>open this page in edge, launch inspect, set watch cursor, hover over page</p>
+        <p>observe: edge tries to reload page several times, shows error that page is having a problem.<br>
+        inspect becomes undstable and sometimes crashes or hangs</p>
+<form>
+    <div class="entry">
+        <label for="form-2">Text with Datalist</label>
+        <input id="form-2"   list="mylist" type="text">
+        <datalist id="mylist">
+            <option label="Mr" value="Mr">
+            <option label="Ms" value="Ms">
+            <option label="Prof" value="Mad Professor"> 
+        </datalist>
+    </div>
+   </form>
+        
+<p>simplied test case taken from <a href="http://html5accessibilty.com/html5elements.html">html5accessibility.com/html5elements</a>, which  is a modified version of the document prepared by <a href="http://www.ackernaut.com/" title="the Ackernaut">the Ackernaut</a> for the benefit of the web development community. <br>
+      If you have suggestions on how to improve this page let him know: terry / at / ackernaut / dot / com<br> 
+</body>
+</html>

@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>form no datalist</title>
+</head>
+<body>
+        <h1>form, fieldset, legend, label, input (text, number, email, url, date, datetime, datetime-local, month, time, week, tel, range, color) div, NO datalist, option, output with live-region, button</h1>
+        <p>datalist causes edge to reload and error, inspect to hang or crash
+<form>
+          <fieldset>
+          <legend>Form legend</legend>
+        
+		  <div class="entry">
+        <label for="form-1">Text (required &amp; autofocus) </label><br>
+        <input id="form-1"  name="haha" type="text" autofocus required>
+       </div>
+        
+         
+		  <div class="entry">
+        <label for="form-1">Text (required &amp; NO autofocus) </label><br>
+        <input id="form-1"  name="haha" type="text" required>
+       </div>
+		
+		<div class="entry">
+        <label for="form-1a">Text with place holder</label><br>
+        <input id="form-1a"  name="hah" type="text" placeholder="place holder">
+ </div>
+		
+
+		
+    <!-- entry end -->
+    <!--
+    <div class="entry">
+        <label for="form-2">Text with Datalist</label>
+        <input id="form-2"   list="mylist" type="text">
+        <datalist id="mylist">
+            <option label="Mr" value="Mr">
+            <option label="Ms" value="Ms">
+            <option label="Prof" value="Mad Professor"> 
+        </datalist>
+    </div>
+    -->
+    
+    <!-- entry end -->
+    <div class="entry">
+        <label for="form-4">Number</label>
+        <input id="form-4"  name="age" type="number" min="18" max="25">
+    </div>
+    <!-- entry end -->
+    <div class="entry">
+        <label for="form-5">Email</label>
+        <input id="form-5"  name="email" type="email">
+    </div>
+    <!-- entry end -->
+    <div class="entry">
+        <label for="form-6">URL</label>
+        <input id="form-6"  name="url" type="url">
+    </div>
+    <!-- entry end -->
+	<div class="entry">
+        <label for="form-7">Date</label>
+        <input id="form-7"  name="dob" type="date">
+    </div>
+    <div class="entry">
+        <label for="form-8">Date Time</label>
+        <input id="form-8"  name="dt" type="datetime">
+    </div>
+	
+	<div class="entry">
+        <label for="form-9">Date Time-local</label>
+        <input id="form-9"  name="dtl" type="datetime-local">
+    </div>
+	<div class="entry">
+        <label for="form-10">Month</label>
+        <input id="form-10"  name="m" type="month">
+    </div>
+	
+	<div class="entry">
+        <label for="form-11">Time</label>
+        <input id="form-11"  name="t" type="time">
+    </div>
+	<div class="entry">
+        <label for="form-12">Week</label>
+        <input id="form-12"  name="w" type="week">
+    </div>
+	<div class="entry">
+        <label for="form-13">Telephone</label>
+        <input id="form-13"  name="tel" type="tel">
+    </div>
+    <!-- entry end -->
+    <div class="entry">
+        <label for="form-14">Range</label>
+        <input id="form-14"  name="a" type="range" min="1" max="10" value="0">
+        output: <output name="result"  onforminput="value=a.value" aria-live="polite">0</output>
+    </div>
+	
+	<div class="entry">
+        <label for="form-15">Color</label>
+        <input id="form-15"  name="tel" type="color">
+    </div>
+	
+    <!-- entry end -->
+    <div class="button">
+        <button type=submit>Submit</button>
+    </div>
+
+          </fieldset>
+        </form>
+        
+<p>simplied test case taken from <a href="http://html5accessibilty.com/html5elements.html">html5accessibility.com/html5elements</a>, which  is a modified version of the document prepared by <a href="http://www.ackernaut.com/" title="the Ackernaut">the Ackernaut</a> for the benefit of the web development community. <br>
+      If you have suggestions on how to improve this page let him know: terry / at / ackernaut / dot / com<br> 
+</body>
+</html>
