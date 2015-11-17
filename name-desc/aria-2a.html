@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Accessible Name and Description: Computation and API Mappings 1.1: 2A</title>
+</head>
+<body>
+	<h1>Accessible Name and Description: Computation and API Mappings 1.1: 2A</h1>
+	<blockquote>If the current node is hidden and is not referenced by aria-labelledby or aria-describedby, nor referenced by a native host language text alternative element or attribute, return the empty string. </blockquote>
+	
+	<h2>Test Items</h2>
+	<button id="test" hidden aria-label="text from aria-label">Test Item</button>
+	
+	<h2>Test Steps</h2>
+	<ol>
+		<li>Launch file in Edge</li>
+		<li>Launch Inspect and enable "Watch Cursor"</li>
+		<li>Look under the heading test items</li>
+		<li>With Inspect, focus anywhere on the page</li>
+		<li>Expand the node for the page (named "Accessible Name and Description...")</li>
+		<li>Place Inspect focus on the page node again, and choose "Text Pattern Explorer" from the Action Menu.</li>
+	</ol>
+	<h2>Expected Results</h2>
+	<ol>
+		<li>At Step 3, there shouldn't be anything visible between that heading and the Test Steps heading.</li>
+		<li>At Step 5, you will see two lists in the tree, and no "Test Item"<li>
+		<li>At Step 6, the string "Test Item" will not appear in the text pattern</li>
+	</ol>
+</body>
+</html>

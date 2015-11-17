@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Test 505 Image element with role="presentation" but with aria-label="test"</title>
+</head>
+<body>
+<img src="foo.jpg" alt="test1" width="40" height="40" role="presentation" aria-label="test"/>
+
+       <h2>directions</h2>
+       <table>
+         <tr>
+           <th>Testable statement</th>
+           <th>Test Steps</th>
+           <th>Expected result</th>
+         </tr>
+         <tr>
+           <td>
+An unfocusable element with role presentation, having an aria-label property with value "test".
+           </td>          
+           <td>
+             <ol>
+               <li>Open file in Edge</li>
+               <li>Start Inspect, set to watch cursor</li>
+               <li>mouse over test item</li>
+             </ol>
+           </td>
+           <td>
+			   Mapped to the accessibility API, as if no role of presentation was appliedand has an Name property with value "test"
+		   </td>
+         </tr>
+       </table>        
+</body>
+</html>
+

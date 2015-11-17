@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Test 523 An owned, unfocusable element, having aria-label="test" that inherits role="presentation"</title>
+</head>
+<body>
+<table role="presentation">
+<tr>
+<td aria-label="test">foo</td>
+</tr>
+</table>
+
+       <h2>directions</h2>
+       <table>
+         <tr>
+           <th>Testable statement</th>
+           <th>Test Steps</th>
+           <th>Expected result</th>
+         </tr>
+         <tr>
+           <td>
+An owned, unfocusable element, having an aria-label property with value "test", and an inherited presentation role.
+           </td>          
+           <td>
+             <ol>
+               <li>Open file in Edge</li>
+               <li>Start Inspect, set to watch cursor</li>
+               <li>mouse over test item</li>
+             </ol>
+           </td>
+           <td>
+An element (or object) with any role is in the accessibility tree with the accessible name "test". Check UAIG for how @aria-label is exposed on each platform.
+On UIA, this is exposed as the name via the Text Alternative Calculation Algorithm
+		   </td>
+         </tr>
+       </table> 
+</body>
+</html>
+

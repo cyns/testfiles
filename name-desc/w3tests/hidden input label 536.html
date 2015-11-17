@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Test 536 UT type=ANY with aria-hidden="true" with no aria-labelledby and with id="test".</title>
+</head>
+<body>
+<input type="button" id="test" aria-hidden="true"/>
+
+       <h2>directions</h2>
+       <table>
+         <tr>
+           <th>Testable statement</th>
+           <th>Test Steps</th>
+           <th>Expected result</th>
+         </tr>
+         <tr>
+           <td>
+An INPUT type=ANY with aria-hidden="true" with no aria-labelledby and with id="test".
+           </td>          
+           <td>
+             <ol>
+               <li>Open file in Edge</li>
+               <li>Start Inspect, set to watch cursor</li>
+               <li>mouse over test item</li>
+             </ol>
+           </td>
+           <td>
+Accessible name is BLANK or the result returned is a failure as no name is provided.
+		   </td>
+         </tr>
+       </table> 
+</body>
+</html>
+

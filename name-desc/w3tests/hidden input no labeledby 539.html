@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Test 539 An INPUT type=ANY, with an id="test", an aria-label, and no aria-labelledby.</title>
+</head>
+<body>
+<input type="button" aria-label="Rich" id="test">
+
+       <h2>directions</h2>
+       <table>
+         <tr>
+           <th>Testable statement</th>
+           <th>Test Steps</th>
+           <th>Expected result</th>
+         </tr>
+         <tr>
+           <td>
+An INPUT type=ANY, with an id="test", an aria-label, and no aria-labelledby.
+           </td>          
+           <td>
+             <ol>
+               <li>Open file in Edge</li>
+               <li>Start Inspect, set to watch cursor</li>
+               <li>mouse over test item</li>
+             </ol>
+           </td>
+           <td>
+Accessible name is equal to the value of the aria-label attribute.
+		   </td>
+         </tr>
+       </table> 
+</body>
+</html>
+

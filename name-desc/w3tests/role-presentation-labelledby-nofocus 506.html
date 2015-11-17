@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Test 506 Image element with role="presentation" but with a valid aria-labelledby attribute</title>
+</head>
+<body>
+<img src="foo.jpg" alt="test1" width="40" height="40" role="presentation" aria-labelledby="test2"/>
+<div id="test2">
+test_label
+</div>
+
+       <h2>directions</h2>
+       <table>
+         <tr>
+           <th>Testable statement</th>
+           <th>Test Steps</th>
+           <th>Expected result</th>
+         </tr>
+         <tr>
+           <td>
+An unfocusable element with role presentation, having an aria-labelledby property with a valid IDREF value.
+           </td>          
+           <td>
+             <ol>
+               <li>Open file in Edge</li>
+               <li>Start Inspect, set to watch cursor</li>
+               <li>mouse over test item</li>
+             </ol>
+           </td>
+           <td>
+Mapped to the accessibility API, as if no role of presentation was applied and have a Name property of "test_label" and expose a reference to the accessible object in the LabeledBy property.
+		   </td>
+         </tr>
+       </table> 
+</body>
+</html>
+

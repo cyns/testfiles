@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Test 524 An owned, unfocusable element, with a valid aria-labelledby attribute set that inherits role="presentation"</title>
+</head>
+<body>
+<table role="presentation">
+<tr>
+<td aria-labelledby="foo"></td>
+</tr>
+</table>
+<div id="foo">test</div>
+
+       <h2>directions</h2>
+       <table>
+         <tr>
+           <th>Testable statement</th>
+           <th>Test Steps</th>
+           <th>Expected result</th>
+         </tr>
+         <tr>
+           <td>
+An owned, unfocusable element, having an aria-labelledby property with a valid IDREF value, and an inherited presentation role.
+           </td>          
+           <td>
+             <ol>
+               <li>Open file in Edge</li>
+               <li>Start Inspect, set to watch cursor</li>
+               <li>mouse over test item</li>
+             </ol>
+           </td>
+           <td>
+An element (or object) with any role is in the accessibility tree with the accessible name is "test".  
+		   </td>
+         </tr>
+       </table> 
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>&lt;div&gt; with role main; global state or property "aria-labelledby" value of "obj1 obj2"</title>
+   </head>
+   <body>
+      <div id="test" role="main" aria-labelledby="obj1 obj2">Placeholder content</div>
+      <div id="obj1">obj1</div>
+      <div id="obj2">obj2</div>
+      
+       <h2>directions</h2>
+       <table>
+         <tr>
+           <th>Testable statement</th>
+           <th>Test Steps</th>
+           <th>Expected result</th>
+         </tr>
+         <tr>
+           <td>Element with id "test" having role <code>main</code> with global state or property <code>aria-labelledby</code> with value "obj1 obj2", AND elements with id "obj1" and id "obj2" respectively with text contents "obj1" and "obj2" respectively.</td>           <td>
+             <ol>
+               <li>Open file in Edge</li>
+               <li>Start Inspect, set to watch cursor</li>
+               <li>mouse over test item</li>
+             </ol>
+           </td>
+           <td>Expose the flat string "obj1 obj2" in the LabeledBy property.</td>
+         </tr>
+       </table>
+   </body>
+</html>
