@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>aria toggle button from checkbox</title>
+    </head>
+    <body>
+        <div class="toggle">
+    <div class="toggledescription" role="presentation">Finance cards</div>
+    <div class="outlineplaceholder">
+        <input type="checkbox" id="mastertoggle" checked="checked" class="toggleinput" aria-pressed="true" role="button" aria-labelledby="mastertoggle_screenreaderhint">
+            <label for="mastertoggle" class="toggleonlabel" role="presentation">
+                <svg class="toggleonicon" focusable="false" role="presentation">…</svg>On
+            </label>
+            <label for="mastertoggle" class="toggleofflabel">
+                <svg class="toggleofficon" focusable="false" role="presentation">…</svg>
+                <svg class="toggleoffpressedicon" focusable="false" role="presentation">…</svg>Off
+            </label>
+            <span role="tooltip" id="mastertoggle_screenreaderhint" class="screenreaderhint">, Finance cards</span>
+        </div>
+    </div>
+    </body>
+</html>
