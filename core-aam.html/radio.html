@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>ARIA Radio Buttons</title>
+		<style>
+			div[role=radio]
+				{
+					border: thin solid black;
+
+				}
+			div[aria-checked=true]
+				{background-color:black;}
+		</style>
+	</head>
+	<body>
+		<div role="radio">radio</div>
+		<div role="radio" aria-checked="true">radio checked=true</div>
+		<div role="radio" aria-checked="mixed">radio checked=mixed</div>
+		<div role="radio" aria-checked="false">radio checked=false</div>
+		
+		
+		<div role="menuitemradio">menuitemradio</div>
+		<div role="menuitemradio" aria-checked="true">menuitemradio checked=true</div>
+		<div role="menuitemradio" aria-checked="mixed">menuitemradio checked=mixed</div>
+		<div role="menuitemradio" aria-checked="false">menuitemradio checked=false</div>
+	</body>
+</html>

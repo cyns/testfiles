@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>tests for aria-activedescendant</title>
+		<style>
+			div[role=radio]
+				{
+					border: thin solid black;
+					width:1em;
+					height:1em;
+				}
+			div[aria-checked=true]
+				{background-color:black;}
+		</style>
+	</head>
+	
+	<body>
+		
+		<h2>radio buttons</h2>
+		<div role="radiogroup" aria-activedescendant="r2" tabindex="0">
+			<div role="radio" id="r1" aria-labelledby="l1"></div><span role="label" id="l1">One</span>
+			<div role="radio" id="r2" aria-labelledby="l2" aria-checked="true"></div><span role="label" id="l2">Two</span>
+			<div role="radio" id="r3" aria-labelledby="l3"></div><span role="label" id="l3">One</span>
+			
+		</div>
+		
+		
+		<h2>toolbar (static)</h2>
+		<div role="toolbar" tabindex="0" aria-activedescendant="button1">
+		<img src="buttoncut.png" alt="cut" role="button" id="button1">
+		<img src="buttoncopy.png" alt="copy" role="button" id="button2">
+		<img src="buttonpaste.png" alt="paste" role="button" id="button3">
+		</div> 
+	</body>	
+</html>
