@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>fieldset</title>
+</head>
+<body>
+    <fieldset>
+    <legend>Display</legend>
+    <p><label><input type=radio name=c value=0 checked> Black on White</label>
+    <p><label><input type=radio name=c value=1> White on Black</label>
+    <p><label><input type=checkbox name=g> Use grayscale</label>
+    <p><label>Enhance contrast <input type=range name=e list=contrast min=0 max=100 value=0 step=1></label>
+    <datalist id=contrast>
+    <option label=Normal value=0>
+    <option label=Maximum value=100>
+    </datalist>
+    </fieldset>
+   
+   <p>Adapted from <a href="http://www.w3.org/TR/html51/sec-forms.html#the-fieldset-element">html 5.1 spec sample</a>. 
+</body>
+</html>
