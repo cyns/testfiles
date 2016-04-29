@@ -1,0 +1,66 @@
+<html lang="en"><head>
+		<meta charset="utf-8">
+		<title>test file: input type=number element</title>
+	</head>
+	<body>
+		<h1><code>input type=number</code> element</h1>
+
+		<div class="criteria">
+			<h2>Pass Criteria</h2>
+			<ul>
+				<li>#1: Element is supported</li>
+				<li>#2: Element has correct HTML and Core Accessibility API mappings</li>
+				<li>#3: Control is keyboard accessible</li>
+			</ul>
+		</div>
+
+		<div class="reference">	
+			<h2>Reference</h2>
+			<ul>
+				<li><a href="http://www.w3.org/TR/html/forms.html#number-state-(type=number)">HTML5 input type=number element</a></li>
+				<li><a href="https://www.w3.org/TR/html-aam-1.0/#el-input-number">HTML Accessibility API Mappings for input type=number element</a></li>
+				<li><a href="https://www.w3.org/TR/core-aam-1.1/#role-map-spinbutton">Core Accessibility API Mappings for spinbutton role</a></li>
+			</ul>
+		</div>
+        
+        <form>
+
+		<p><input type="number"></p>
+
+		<h2>with label </h2>
+		<p>
+			<label>amount
+			<input type="number"></label>
+		</p>
+
+		<h2>with label + placeholder</h2>
+		<p>
+			<label>amount
+			<input type="number" placeholder="pick a number"></label>
+		</p>
+
+		<h2>with label +  required</h2>
+		<p>
+			<label>amount
+			<input required="" type="number"></label>
+		</p>
+
+		<h2>with label +  readonly</h2>
+		<p>
+			<label>amount
+			<input type="number" readonly=""></label>
+		</p>
+
+		<h2>with label + disabled</h2>
+		<p>
+			<label>amount
+			<input disabled="" type="number"></label>
+		</p>
+
+        <input type="submit">
+        </fomr>
+
+		<h2>Code</h2>
+		<p>&lt;label&gt;amount &lt;input type="number"&gt;&lt;/label&gt;</p>
+	
+</body></html>
