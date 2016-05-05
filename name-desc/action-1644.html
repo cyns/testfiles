@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Action 1644: which is last resort, title or aria-placeholder</title>
+		<style>
+			div[role=searchbox], div[role=textbox] 
+				{
+					border: thin solid black;
+					width:25%;
+				}
+		</style>
+	</head>
+	<body>
+		
+		<h2>Example 25</h2>
+		<p>From <a href="http://www.w3.org/TR/wai-aria-1.1/#aria-placeholder">ARIA 1.1 Spec</a></p>
+		<span id="label1">Birthday:</span>
+		<div contenteditable role="searchbox" aria-labelledby="label1" aria-placeholder="MM-DD-YYYY">03-14-1879</div>
+
+		<h2>Example 26</h2>
+		<p>From <a href="http://www.w3.org/TR/wai-aria-1.1/#aria-placeholder">ARIA 1.1 Spec</a></p>
+		<span id="label2">Birthday:</span>
+		<div contenteditable role="searchbox" aria-labelledby="label2" aria-placeholder="MM-DD-YYYY">MM-DD-YYYY</div>
+		
+		<h2>No content</h2>
+		<span id="label3">Birthday:</span>
+		<div contenteditable role="searchbox" aria-labelledby="label3" aria-placeholder="MM-DD-YYYY"></div>
+
+		<h2>aria-label and no content</h2>
+		<div contenteditable role="searchbox" aria-label="birthday" aria-placeholder="MM-DD-YYYY"></div>
+
+		<h2>html label and placeholder</h2>
+		<label>Birthday:
+		<input placeholder="mm-dd-yyyy"/>
+		</label>
+		
+		<h2>html placeholder only</h2>
+		<input placeholder="mm-dd-yyyy"/>
+
+		<h2>html title only</h2>
+		<input title="birthday"/>
+		
+		<h2>input with @title and html placeholder</h2>
+		<input title="birthday" placeholder="mm-dd-yyyy"/>		
+		
+		<h2>input with @title and aria-placeholder</h2>
+		<input title="birthday" placeholder="mm-dd-yyyy"/>	
+		
+		<h2>div role=searchbox with @title and aria-placeholder</h2>
+		<div contenteditable role="searchbox" title="birthday" aria-placeholder="MM-DD-YYYY"></div>
+		
+		<h2>div role=textbox with @title and aria-placeholder</h2>
+		<div contenteditable role="textbox" title="birthday" aria-placeholder="MM-DD-YYYY"></div>
+
+	</body>
+</html>
