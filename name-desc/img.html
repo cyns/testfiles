@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <title>Image naming test cases</title>
+        <style>
+            body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+            table, td, th {border: 1px solid black; border-collapse: collapse;}
+            th {background-color: #333333; color: white;}
+        </style>
+    </head>
+    <body>
+        <h1>Image naming test cases</h1>
+        
+        <h2>missing alt</h2>
+        <table>
+        <tr><th>image</th><th> attributes</th><th>expected results</th></tr>
+        <tr><td><img src="img/ugly.jpg"></td><td> plain</td>
+               <td>
+                   <ul>
+                       <li>Control Type: Image</li>
+                       <li>Name: empty string</li>
+                   </ul>
+               </td>
+        </tr>
+        <tr><td><img aria-label="Naked mole rat" src="img/ugly.jpg"></td><td> aria-label="Naked mole rat"</td>
+            <td>
+                   <ul>
+                       <li>Control Type: Image</li>
+                       <li>Name: Naked mole rat</li>
+                   </ul>
+               </td>
+         </tr>
+        <tr><td><img title="ugliest animal" aria-label="Naked mole rat" src="img/ugly.jpg"></td><td> title="ugliest animal" aria-label="Naked mole rat" </td>
+            <td>
+                   <ul>
+                       <li>Control Type: Image</li>
+                       <li>Name: Naked mole rat</li>
+                       <li>FullDescription: ugliest animal</li>
+                   </ul>
+               </td>
+         </tr>        
+        </tr>
+        <tr><td><img title="ugliest animal" src="img/ugly.jpg"></td><td> title="ugliest animal"</td>
+               <td>
+                   <ul>
+                       <li>Control Type: Image</li>
+                       <li>Name: empty string</li>
+                   </ul>
+               </td>
+         </tr>
+        </tr>
+        <table>
+        
+        <h2>alt=""</h2>
+        <table>
+        <tr><th>image</th><th> attributes</th><th>expected results</th></tr>            
+        <tr><td><img alt="" src="img/ugly.jpg"></td><td>  plain</td>
+               <td>
+                   <ul>
+                       <li>no element in tree</li>
+                   </ul>
+               </td>        
+        </tr>
+        <tr><td><img alt="" aria-label="Naked mole rat" src="img/ugly.jpg"></td><td> aria-label="Naked mole rat"</td>
+               <td>
+                   <ul>
+                       <li>no element in tree</li>
+                   </ul>
+               </td>   
+        </tr>
+        <tr><td><img alt="" title="ugliest animal" aria-label="Naked mole rat" src="img/ugly.jpg"></td><td> title="ugliest animal" aria-label="Naked mole rat" </td>
+        
+               <td>
+                   <ul>
+                       <li>no element in tree</li>
+                   </ul>
+               </td>           </tr>
+        <tr><td><img alt="" title="ugliest animal" src="img/ugly.jpg"></td><td> title="ugliest animal"</td>
+               <td>
+                   <ul>
+                       <li>no element in tree</li>
+                   </ul>
+               </td>   
+        </tr>
+        </table>
+        
+        <h2>alt="foo"</h2>
+        <table>
+        <tr><th>image</th><th> attributes</th><th>expected results</th><th></tr>            
+        <tr><td><img alt="foo" src="img/ugly.jpg"> </td><td> plain</td>
+            <td>
+                   <ul>
+                       <li>Control Type: Image</li>
+                       <li>Name: foo</li>
+                   </ul>
+               </td>        
+        </tr>
+        <tr><td><img alt="foo" aria-label="Naked mole rat" src="img/ugly.jpg"></td><td> aria-label="Naked mole rat"</td>
+              <td>
+                   <ul>
+                       <li>Control Type: Image</li>
+                       <li>Name: Naked mole rat</li>
+                   </ul>
+               </td>
+        </tr>
+        <tr><td><img alt="foo" title="ugliest animal" aria-label="Naked mole rat" src="img/ugly.jpg"></td><td> title="ugliest animal" aria-label="Naked mole rat" </td>
+            <td>
+                   <ul>
+                       <li>Control Type: Image</li>
+                       <li>Name: Naked mole rat</li>
+                       <li>FullDescription: ugliest animal</li>
+                   </ul>
+               </td>        
+        </tr>
+        <tr><td><img alt="foo" title="ugliest animal" src="img/ugly.jpg"></td><td> title="ugliest animal"</td>
+            <td>
+                   <ul>
+                       <li>Control Type: Image</li>
+                       <li>Name: foo</li>
+                       <li>FullDescription: ugliest animal</li>
+                   </ul>
+               </td>        
+        </tr>        
+        </table>
+        
+        <h2>role=presentation missing alt</h2>
+        <table>
+        <tr><th>image</th><th> attributes</th><th>expected results</th></tr>       
+        <tr><td><img role="presentation" src="img/ugly.jpg"></td><td>  plain</td>
+               <td>
+                   <ul>
+                       <li>no element in tree</li>
+                   </ul>
+               </td>           
+        </tr>
+        <tr><td><img role="presentation" aria-label="Naked mole rat" src="img/ugly.jpg"></td><td> aria-label="Naked mole rat"</td>
+               <td>
+                   <ul>
+                       <li>no element in tree</li>
+                   </ul>
+               </td>           
+        </tr>
+        <tr><td><img role="presentation" title="ugliest animal" aria-label="Naked mole rat" src="img/ugly.jpg"></td><td> title="ugliest animal" aria-label="Naked mole rat" </td>
+               <td>
+                   <ul>
+                       <li>no element in tree</li>
+                   </ul>
+               </td>           </tr>
+        <tr><td><img role="presentation" title="ugliest animal" src="img/ugly.jpg"></td><td> title="ugliest animal"</td>
+               <td>
+                   <ul>
+                       <li>no element in tree</li>
+                   </ul>
+               </td>           
+        </tr>
+        </table>
+        
+        <h2> role="presentation" alt=""</h2>
+        <table>
+        <tr><th>image</th><th> attributes</th><th>expected results</th></tr>                   
+        <tr><td><img role="presentation" alt="" src="img/ugly.jpg"></td><td> plain</td>
+               <td>
+                   <ul>
+                       <li>no element in tree</li>
+                   </ul>
+               </td>    </tr>
+        <tr><td><img role="presentation" alt="" aria-label="Naked mole rat" src="img/ugly.jpg"></td><td> aria-label="Naked mole rat"</td>
+               <td>
+                   <ul>
+                       <li>no element in tree</li>
+                   </ul>
+               </td>            
+        </tr>
+        <tr><td><img role="presentation" alt="" title="ugliest animal" aria-label="Naked mole rat" src="img/ugly.jpg"></td><td> title="ugliest animal" aria-label="Naked mole rat" </td>
+               <td>
+                   <ul>
+                       <li>no element in tree</li>
+                   </ul>
+               </td>            </tr>
+        <tr><td><img role="presentation" alt="" title="ugliest animal" src="img/ugly.jpg"></td><td> title="ugliest animal"</td>
+               <td>
+                   <ul>
+                       <li>no element in tree</li>
+                   </ul>
+               </td>            </tr>
+        </table>
+        
+        <h2> role="presentation" alt="foo"</h2>
+        <table>
+        <tr><th>image</th><th> attributes</th><th>expected results</th></tr>                 
+        <tr><td><img role="presentation" alt="foo" src="img/ugly.jpg"> </td><td> plain</td>
+               <td>
+                   <ul>
+                       <li>no element in tree</li>
+                   </ul>
+               </td>            </tr>
+        <tr><td><img role="presentation" alt="foo" aria-label="Naked mole rat" src="img/ugly.jpg"></td><td> aria-label="Naked mole rat"</td>
+               <td>
+                   <ul>
+                       <li>no element in tree</li>
+                   </ul>
+               </td>    
+             </tr>
+        <tr><td><img role="presentation" alt="foo" title="ugliest animal" aria-label="Naked mole rat" src="img/ugly.jpg"></td><td> title="ugliest animal" aria-label="Naked mole rat" </td>
+        
+               <td>
+                   <ul>
+                       <li>no element in tree</li>
+                   </ul>
+               </td>   
+        </tr>
+        <tr><td><img role="presentation" alt="foo" title="ugliest animal" src="img/ugly.jpg"></td><td> title="ugliest animal"</td>
+               <td>
+                   <ul>
+                       <li>no element in tree</li>
+                   </ul>
+               </td>            
+        </tr>        
+        </table>
+        
+        <p>Naked mole rat test cases adapted from <a href="http://3needs.org/en/testing/code/aria-label-4.html">3Needs ARIA Techniques</a></p>
+    </body>
+</html>
