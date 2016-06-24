@@ -3,11 +3,21 @@
 		<title>images</title>
 	</head>
 	<body>
+	
 		<div>
-			<p>only src: <img src="planets.gif"></p>
-			<p>src and alt="planets" <img src="planets.gif" alt="planets"></p>			
-			<p>src and alt="" <img src="planets.gif" alt=""></p>
-			<p>src and role="presentation" <img src="planets.gif" role="presentation"></p>						
+			<ol>
+			<li><img src="http://placehold.it/300" />Missing alt: Control Type: Image, name: empty string</li>
+			<li><img src="http://placehold.it/300" alt="second image"/>alt="second image": Control Type: Image, name: "second image"</li>
+			<li><img src="http://placehold.it/300" aria-label="third image"/>aria-label"third image": Control Type: Image, name: "third image"</li>
+			<li><img src="http://placehold.it/300" onclick="alert(1)"/>onclick: Control Type: Image, name: empty string</li>
+			<li><img src="http://placehold.it/300" tabindex="0"/>tabindex="0": Control Type: Image, name: empty string</li>
+			<li><img src="http://placehold.it/300" tabindex="-1"/>tabindex="-1": Control Type: Image, name: empty string</li>			
+			<li><img src="http://placehold.it/300" alt="" />alt="": Not in Control tree</li>
+			<li><img src="http://placehold.it/300" alt />alt (no = or value): ??? check with working group</li>
+			<li><img src="http://placehold.it/300" role="presentation" />role="presentation": Not in Control tree</li>
+			<li><img src="http://placehold.it/300" role="none" />role="none": Not in Control tree</li>
+			</ol>
+
 		</div>
 	</body>
 </html>
