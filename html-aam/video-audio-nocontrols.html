@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>video/audio controls attribute test case</title>
+</head>
+<body>
+    <h1>Video/audio controls attribute test case</h1>
+    
+    <h2>Video with controls</h2>
+    <video id="video1" controls width="300" height="300">
+        <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+        <track kind="captions" srclang="en" src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English">
+    </video>
+    <h2>Video without controls</h2>
+    <video id="video1" width="300" height="300">
+        <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+        <track kind="captions" srclang="en" src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English">
+    </video>
+    
+    <h2>Audio with controls</h2>
+    <audio id="audio1" controls width="300" height="300">
+        <source src="https://thepaciellogroup.github.io/AT-browser-tests/audio/jeffbob.mp3" type="audio/mpeg" />
+    </audio>
+
+    <h2>Audio without controls</h2>
+    <audio id="audio1" width="300" height="300">
+        <source src="https://thepaciellogroup.github.io/AT-browser-tests/audio/jeffbob.mp3" type="audio/mpeg" />
+    </audio>
+</body>
